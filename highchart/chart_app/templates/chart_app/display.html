@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>#container {
+    min-width: 300px;
+    max-width: 800px;
+    height: 300px;
+    margin: 1em auto;
+}
+</style>
+    <title></title>
+  </head>
+  <body>
+
+    <div id="container"></div>
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script>
+  Highcharts.chart('container', {{ chart|safe }});
+</script>
+  </body>
+</html>
